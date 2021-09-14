@@ -1,0 +1,376 @@
+/* The sidebar menu */
+html {
+    scroll-behavior: smooth;
+  }
+body{
+    background-color: black;
+    font-family: 'Montserrat', sans-serif;
+    color: aliceblue;
+}
+
+
+header{ 
+    height: 250px;
+    padding-top: 100px;
+    padding: auto;
+   
+}
+
+.card{
+    background-color: rgba(255, 255, 255, 0.87);
+    
+}
+
+ 
+
+.home{
+    
+    background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ), 
+    url(../images/home.jpg) no-repeat center;
+    background-size: cover;
+    height: 800px;
+}
+
+.exp{
+    max-width: fit-content;
+    height: 160px;
+    padding: 20px;   
+    
+    width: 100%;
+}
+
+.exp i{
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+
+
+div.exp p{
+    padding-left:130px ;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #f3f3f3;
+}
+
+.main p{
+    color: rgba(255, 255, 255, 0.733);
+    margin: 0px 10px;
+}
+
+img{
+    width: 100%;
+    aspect-ratio: auto;
+
+}
+.jumbo{
+    
+    color: white;
+    font-size: 60px;
+    text-align: center;
+}
+
+#jumbop{
+    color: white;
+    text-align: center;
+    padding: 20px 20px;
+    font-size: 30px;
+}
+a img {
+    margin-top: 0px;
+    max-height: 120px;
+    max-width: 120px;
+    padding: 0px 0px;
+}
+
+
+.sidenavel a i{
+    margin-top: 30px;
+}
+.sidenavel a p{
+    font-size: medium;
+}
+.sidenav {
+    margin-bottom: 0px;
+    height: 110%; /* Full-height: remove this if you want "auto" height */
+    width: 120px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 99; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+    margin-top: -20px;
+    text-align: center;
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    justify-content: center;
+    display: flex;
+    margin: auto;
+    height: 120px;
+    width: 120px;
+    text-decoration: none;
+    font-size: 35px;
+    color: #818181;
+    display: block;
+    text-align: center;
+    
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: black;
+    background-color: white;
+  }
+  
+  
+  /* Style page content */
+  .main {
+    margin-left: 120px; /* Same as the width of the sidebar */
+    padding: 0px 0px;
+    padding-left: 10px;
+  }
+
+  #name {
+      padding: 10px;
+      padding-left: 0px;
+      margin: 20px 0px;
+      margin-left: 10px;
+      width: fit-content;  
+      border-bottom: rgb(0, 0, 0) solid 2px;
+      
+      }
+
+  #name:hover{
+      border-color: white;
+      transition: all 0.5s ease-in-out;
+
+  }
+
+  .skills{
+     
+      padding: 10px 10px 10px 0px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}   
+  }
+
+ 
+.avatar {
+    /* margin: 20px 30px 50px 10px; */
+    
+    max-width: 120px;
+    max-height: 120px;
+    border-radius: 50%;
+    float: left; 
+  }
+.gallery{
+    padding: 10px;
+}
+.gallery p,h5 {
+    color: black;
+}
+
+.gallery button{
+    background-color: white;
+    
+}
+.contact{
+    margin-left: 140px;
+}
+.contact i{
+    font-size: 40px;
+    margin-left: 0px;
+    float: left;
+    padding-right: 10px;
+}
+
+#emails {
+    width: 70%;
+    margin-left: 20px;
+    
+}
+
+#legende{
+    padding-left: 30px;
+    margin-left: 20px;
+    width: 100%;
+}
+
+#emails label{
+    margin: 10px 0px;
+}
+
+#emails button {
+    margin: 10px 0px;
+}
+
+@media screen and (max-width: 480px) {
+    
+    .sidenav {
+      width: 100%;
+      height: auto;
+      max-height: 150px;
+      position: fixed;  
+      float: inline-start;
+      overflow-y: scroll;
+      text-align: center;
+      align-items: center;
+      align-content: center;
+    }
+    .main{
+        margin-top: 100px;
+    }
+    .sidenav a {
+      width: auto;
+      font-size: auto;
+      text-align: center;
+      padding: 10px;
+      height: auto;
+      
+    }
+    .sidenav #logo{
+        display: none;
+    }
+    .sidenavel{
+        text-align: center;
+        align-items: center;
+    }
+    div.main {margin-left: 0;width: 100%;padding: 0%;display: block;}
+    #emails{width: 90%;}
+
+    .sidenavel a {
+        text-align: center;
+    }
+  }
+  
+  
+  .skills-section{
+    padding: 20px 10px 10px 10px;
+    
+    }
+    
+    
+    
+    
+    
+    .skills-container{
+    display: grid;
+    grid-tempLate-columns: repeat(3, 1fr);
+    justify-content:center;
+    align-items:center;
+    text-align: center;
+    grid-gap:1rem;
+    padding: 1rem 80px;
+    font-size: 1.2rem;
+    }
+    .skills-box{
+    padding: 1rem;
+    color: #000;
+    cursor:pointer;
+    }
+    .skills-box:hover > .skills-title:after, 
+    .skills-box:hover > .skills-title:before{
+    width: 30px;
+    }
+    .skills-box:hover .skills-img{
+    transform: translateX(-20px);
+    }
+    
+    .skills-title{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    position: relative;
+    }
+    
+    .skills-title:after{
+    content: '';
+    position:absolute;
+    bottom: 0;
+    /* right: 50%; */
+    width:20px;
+    height:4px;
+    border-radius: 2px 0 0 2px;
+    background-color: #f3f3f3;
+    transition: .5s;
+    }
+    
+    .skills-title:before{
+    content: '';
+    position:absolute;
+    bottom: 0;
+    
+    width:100px;
+    height:4px;
+    border-radius: 0 2px 2px 0;
+    background-color: #ffffff;
+    }
+    
+    .skills-icons{
+    width:50px;
+    z-index:2;
+    }
+    
+    .skills-img{
+    width:90px;
+    height:90px;
+    position: relative;
+    border-radius: 45px;
+    background-color: #fff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    transition: .5s;
+    }
+    
+    .skills-title h3{
+    color: rgb(255, 255, 255);
+    margin-top: 0.5rem;
+    }
+    @media screen and (max-width:990px){
+     .skills-container{
+     grid-tempLate-columns: repeat(2, 1fr);
+     padding: 2rem 50px;
+     }
+    }
+    
+    @media screen and (max-width:650px){
+     .skills-container{
+     grid-tempLate-columns:2fr;
+     padding: 2rem 50px;
+     }
+    }
+
+
+    form { 
+        padding: 10px;
+    }
+
+
+    span.carousel-control-next-icon{
+        filter: none;
+    }
+    
+  
+  /* @media screen and (max-width: 400px) {
+    ul.sidenav li a {
+      text-align: center;
+      float: none;
+    }
+  } */
