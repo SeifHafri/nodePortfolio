@@ -2,9 +2,9 @@ var express = require("express");
 var ejs = require("ejs");
 var app = express();
 app.set("view engine", "ejs");
-app.use(express.static(__dirname + "/public"));
+app.use(express.static("./public"));
 
-console.log(__dirname + "/public");
+console.log("./public");
 
 app.get("/", function (req, res) {
   res.render("index");
