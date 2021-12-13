@@ -42,6 +42,13 @@ header{
     
     width: 100%;
 }
+.exp2{
+    max-width: fit-content;
+    height: 80px;
+    padding: 20px;   
+    
+    width: 100%;
+}
 
 .exp i{
   position: relative;
